@@ -29,7 +29,6 @@ extern char **environ;
  * @_environ: environment variable
  * @pid: process ID of the shell
  */
-
 typedef struct data
 {
 	char **av;
@@ -47,7 +46,6 @@ typedef struct data
  * @next: next node
  * Description: single linked list to store separators
  */
-
 typedef struct sep_list_s
 {
 	char separator;
@@ -60,7 +58,6 @@ typedef struct sep_list_s
  * @next: next node
  * Description: single linked list to store command lines
  */
-
 typedef struct line_list_s
 {
 	char *line;
@@ -75,7 +72,6 @@ typedef struct line_list_s
  * @next: next node
  * Description: single linked list to store variables
  */
-
 typedef struct r_var_list
 {
 	int len_var;
@@ -89,7 +85,6 @@ typedef struct r_var_list
  * @name: The name of the command builtin i.e cd, exit, env
  * @f: data type pointer function.
  */
-
 typedef struct builtin_s
 {
 	char *name;
